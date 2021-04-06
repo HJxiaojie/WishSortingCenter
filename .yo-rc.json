@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.sinotrans.hd"
+    },
+    "jhipsterVersion": "6.10.1",
+    "applicationType": "monolith",
+    "baseName": "wishSortingCenter",
+    "packageName": "com.sinotrans.hd",
+    "packageFolder": "com/sinotrans/hd",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZmE2YmEwZTEzZjkyNTFkNTZiZWQ1YTBiYWMyOGZjYTU2YzM2ZmNhNjAyMTIxNTllM2JjOWUyMGI2ZDgzOTBhNGQyYTk2NjE2Y2EzMGZiMGFmMmE4MWQwOGNhNTc1ZDk4YmU3ZDlhZmZiOGQ0MDNmYTY2MzI5MGExY2ZlMzU1NGI=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1617674597313,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
