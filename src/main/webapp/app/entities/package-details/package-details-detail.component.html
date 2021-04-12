@@ -1,0 +1,62 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="packageDetails">
+            <h2><span>Package Details</span> {{ packageDetails.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Tracking Id</span></dt>
+                <dd>
+                    <span>{{ packageDetails.trackingId }}</span>
+                </dd>
+                <dt><span>Group Id</span></dt>
+                <dd>
+                    <span>{{ packageDetails.groupId }}</span>
+                </dd>
+                <dt><span>Job Id</span></dt>
+                <dd>
+                    <span>{{ packageDetails.jobId }}</span>
+                </dd>
+                <dt><span>Is Finish</span></dt>
+                <dd>
+                    <span>{{ packageDetails.isFinish }}</span>
+                </dd>
+                <dt><span>Finish Time</span></dt>
+                <dd>
+                    <span>{{ packageDetails.finishTime }}</span>
+                </dd>
+                <dt><span>User Code</span></dt>
+                <dd>
+                    <span>{{ packageDetails.userCode }}</span>
+                </dd>
+                <dt><span>X Num</span></dt>
+                <dd>
+                    <span>{{ packageDetails.xNum }}</span>
+                </dd>
+                <dt><span>Y Num</span></dt>
+                <dd>
+                    <span>{{ packageDetails.yNum }}</span>
+                </dd>
+                <dt><span>Xy</span></dt>
+                <dd>
+                    <span>{{ packageDetails.xy }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/package-details', packageDetails.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

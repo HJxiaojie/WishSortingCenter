@@ -37,7 +37,7 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost:3306/wishSortingCenter?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    url: jdbc:mysql://10.234.243.200:3307/sorting?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
     username: root
     password:
     hikari:
@@ -89,12 +89,12 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
-        base64-secret: ZmE2YmEwZTEzZjkyNTFkNTZiZWQ1YTBiYWMyOGZjYTU2YzM2ZmNhNjAyMTIxNTllM2JjOWUyMGI2ZDgzOTBhNGQyYTk2NjE2Y2EzMGZiMGFmMmE4MWQwOGNhNTc1ZDk4YmU3ZDlhZmZiOGQ0MDNmYTY2MzI5MGExY2ZlMzU1NGI=
+        base64-secret: YjRlYmRmNmYxMGViODliMWU5MTkyNTI3YTEyNWE4MWQ0NzI2ZDg5NzE5OTc3NDkxYjk1YWE1MjdiYjRiZTE4ZmU0OGY0YWExN2NkMzM0NGU4OWNkNTUwNTRjODkxNGNhYWU0M2I5MGJiNDdhNTE5MzBkY2M2NTFhNjI4NmMwOGE=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000
   mail: # specific JHipster mail property, for standard properties see MailProperties
-    base-url: http://127.0.0.1:8080
+    base-url: http://localhost:8080
   metrics:
     logs: # Reports metrics in the logs
       enabled: false

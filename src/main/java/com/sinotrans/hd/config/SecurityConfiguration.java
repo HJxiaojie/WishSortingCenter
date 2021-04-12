@@ -1,8 +1,8 @@
 package com.sinotrans.hd.config;
 
-import com.sinotrans.hd.security.*;
-import com.sinotrans.hd.security.jwt.*;
-
+import com.sinotrans.hd.security.AuthoritiesConstants;
+import com.sinotrans.hd.security.jwt.JWTConfigurer;
+import com.sinotrans.hd.security.jwt.TokenProvider;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpMethod;
@@ -79,6 +79,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .antMatchers("/api/authenticate").permitAll()
             .antMatchers("/api/register").permitAll()
             .antMatchers("/api/activate").permitAll()
+            .antMatchers("/api/job/**").permitAll()
+            .antMatchers("/api/package-details/**").authenticated()
             .antMatchers("/api/account/reset-password/init").permitAll()
             .antMatchers("/api/account/reset-password/finish").permitAll()
             .antMatchers("/api/**").authenticated()

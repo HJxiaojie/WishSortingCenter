@@ -48,6 +48,8 @@ public class CacheConfiguration {
             createCache(cm, com.sinotrans.hd.domain.User.class.getName());
             createCache(cm, com.sinotrans.hd.domain.Authority.class.getName());
             createCache(cm, com.sinotrans.hd.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.sinotrans.hd.domain.Job.class.getName());
+            createCache(cm, com.sinotrans.hd.domain.PackageDetails.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

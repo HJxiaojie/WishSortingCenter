@@ -1,10 +1,8 @@
 package com.sinotrans.hd;
 
 import com.sinotrans.hd.config.ApplicationProperties;
-
 import io.github.jhipster.config.DefaultProfileUtil;
 import io.github.jhipster.config.JHipsterConstants;
-
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -81,10 +79,12 @@ public class WishSortingCenterApp {
             log.warn("The host name could not be determined, using `localhost` as fallback");
         }
         log.info("\n----------------------------------------------------------\n\t" +
-                "Application '{}' is running! Access URLs:\n\t" +
+                "Sinotrans Application '{}' is running! \n\t" +
+                "Access URLs:\n\t" +
                 "Local: \t\t{}://localhost:{}{}\n\t" +
                 "External: \t{}://{}:{}{}\n\t" +
-                "Profile(s): \t{}\n----------------------------------------------------------",
+                "Profile(s): \t{}" +
+                "\n----------------------------------------------------------",
             env.getProperty("spring.application.name"),
             protocol,
             serverPort,

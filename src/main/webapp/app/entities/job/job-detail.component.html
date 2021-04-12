@@ -1,0 +1,62 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="job">
+            <h2><span>Job</span> {{ job.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Version</span></dt>
+                <dd>
+                    <span>{{ job.version }}</span>
+                </dd>
+                <dt><span>Job Id</span></dt>
+                <dd>
+                    <span>{{ job.jobId }}</span>
+                </dd>
+                <dt><span>Is Current</span></dt>
+                <dd>
+                    <span>{{ job.isCurrent }}</span>
+                </dd>
+                <dt><span>Start Time</span></dt>
+                <dd>
+                    <span>{{ job.startTime }}</span>
+                </dd>
+                <dt><span>Finish Time</span></dt>
+                <dd>
+                    <span>{{ job.finishTime }}</span>
+                </dd>
+                <dt><span>Total Groups</span></dt>
+                <dd>
+                    <span>{{ job.totalGroups }}</span>
+                </dd>
+                <dt><span>Total Parcels</span></dt>
+                <dd>
+                    <span>{{ job.totalParcels }}</span>
+                </dd>
+                <dt><span>X Num</span></dt>
+                <dd>
+                    <span>{{ job.xNum }}</span>
+                </dd>
+                <dt><span>Y Num</span></dt>
+                <dd>
+                    <span>{{ job.yNum }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/job', job.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

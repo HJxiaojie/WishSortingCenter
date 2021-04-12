@@ -1,0 +1,52 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "version",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isCurrent",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "startTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "finishTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "totalGroups",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "totalParcels",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "xNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "yNum",
+      "fieldType": "Integer"
+    }
+  ],
+  "changelogDate": "20210406063413",
+  "dto": "mapstruct",
+  "searchEngine": false,
+  "service": "serviceClass",
+  "entityTableName": "job",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "no"
+}

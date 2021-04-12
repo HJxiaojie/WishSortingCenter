@@ -19,22 +19,23 @@
     "searchEngine": false,
     "messageBroker": false,
     "serviceDiscoveryType": false,
-    "buildTool": "maven",
+    "buildTool": "gradle",
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "ZmE2YmEwZTEzZjkyNTFkNTZiZWQ1YTBiYWMyOGZjYTU2YzM2ZmNhNjAyMTIxNTllM2JjOWUyMGI2ZDgzOTBhNGQyYTk2NjE2Y2EzMGZiMGFmMmE4MWQwOGNhNTc1ZDk4YmU3ZDlhZmZiOGQ0MDNmYTY2MzI5MGExY2ZlMzU1NGI=",
+    "jwtSecretKey": "YjRlYmRmNmYxMGViODliMWU5MTkyNTI3YTEyNWE4MWQ0NzI2ZDg5NzE5OTc3NDkxYjk1YWE1MjdiYjRiZTE4ZmU0OGY0YWExN2NkMzM0NGU4OWNkNTUwNTRjODkxNGNhYWU0M2I5MGJiNDdhNTE5MzBkY2M2NTFhNjI4NmMwOGE=",
     "embeddableLaunchScript": false,
     "useSass": true,
     "clientPackageManager": "npm",
     "clientFramework": "angularX",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "creationTimestamp": 1617674597313,
+    "creationTimestamp": 1617679342022,
     "testFrameworks": [],
     "jhiPrefix": "jhi",
     "entitySuffix": "",
     "dtoSuffix": "DTO",
     "otherModules": [],
     "enableTranslation": false,
-    "blueprints": []
+    "blueprints": [],
+    "lastLiquibaseTimestamp": 1617784177000
   }
 }

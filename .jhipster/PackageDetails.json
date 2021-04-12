@@ -1,0 +1,52 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "trackingId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "groupId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isFinish",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "finishTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "userCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "xNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "yNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "xy",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20210407082937",
+  "dto": "mapstruct",
+  "searchEngine": false,
+  "service": "serviceClass",
+  "entityTableName": "package_details",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "no"
+}

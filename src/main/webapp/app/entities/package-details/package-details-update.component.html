@@ -1,0 +1,81 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-package-details-heading">Create or edit a Package Details</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_trackingId">Tracking Id</label>
+                    <input type="text" class="form-control" name="trackingId" id="field_trackingId"
+                           formControlName="trackingId"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_groupId">Group Id</label>
+                    <input type="text" class="form-control" name="groupId" id="field_groupId"
+                           formControlName="groupId"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_jobId">Job Id</label>
+                    <input type="text" class="form-control" name="jobId" id="field_jobId"
+                           formControlName="jobId"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_isFinish">Is Finish</label>
+                    <input type="checkbox" class="form-control" name="isFinish" id="field_isFinish"
+                           formControlName="isFinish"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_finishTime">Finish Time</label>
+                    <div class="d-flex">
+                        <input id="field_finishTime" type="datetime-local" class="form-control" name="finishTime" formControlName="finishTime" placeholder="YYYY-MM-DD HH:mm"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_userCode">User Code</label>
+                    <input type="text" class="form-control" name="userCode" id="field_userCode"
+                           formControlName="userCode"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_xNum">X Num</label>
+                    <input type="number" class="form-control" name="xNum" id="field_xNum"
+                           formControlName="xNum"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_yNum">Y Num</label>
+                    <input type="number" class="form-control" name="yNum" id="field_yNum"
+                           formControlName="yNum"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_xy">Xy</label>
+                    <input type="text" class="form-control" name="xy" id="field_xy"
+                           formControlName="xy"/>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span>Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span>Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
